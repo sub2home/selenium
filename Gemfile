@@ -1,4 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'selenium-webdriver'
+gem 'rspec'
+gem 'sauce'
+gem 'sauce-connect'
+gem 'cucumber'
+gem 'sauce-cucumber'
+gem 'capybara'
+gem 'parallel_tests'
