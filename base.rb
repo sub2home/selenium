@@ -4,10 +4,10 @@ require 'selenium-webdriver'
 
 class ExampleTest < Test::Unit::TestCase
     def setup
-        caps = Selenium::WebDriver::Remote::Capabilities.firefox
-        caps.version = '5'
-        caps.platform = :XP
-        caps[:name] = 'Testing Selenium 2 with Ruby on Sauce'
+        caps = Selenium::WebDriver::Remote::Capabilities.send(ENV['WEBDRIVER_BROWSER'])
+        caps.version = ENV['WEBDRIVER_VERSION']
+        caps.platform = ENV['WEBDRIVER_OS']
+        caps[:name] = 'Test'
 
         @driver = Selenium::WebDriver.for(
           :remote,
