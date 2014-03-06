@@ -1,0 +1,7 @@
+box: wercker/ruby
+build:
+    steps:
+        - bundle-install
+        - script:
+            name: Selenium tests
+            code: ruby base.rb
