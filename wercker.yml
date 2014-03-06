@@ -4,4 +4,4 @@ build:
         - bundle-install
         - script:
             name: Selenium tests
-            code: ruby base.rb
+            code: bundle exec rake
