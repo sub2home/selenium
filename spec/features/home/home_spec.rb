@@ -5,7 +5,7 @@ describe "home.home", :sauce => true do
     page.has_title? "sub2home - Deine Onlinetheke für SUBWAY®-Lieferservices"
     fill_in "Wo", with: "18574"
     sleep 1
-    page.find("span", text: "Gustow" ).click
+    click_link("Gustow")
     page.has_title? "SUBWAY® Rügen Lieferservice - sub2home"
   end
 
