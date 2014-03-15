@@ -5,7 +5,7 @@ describe "home.home", :sauce => true do
     page.has_title? "sub2home - Deine Onlinetheke für SUBWAY®-Lieferservices"
     fill_in "Wo", with: "18574"
     sleep 1
-    click_link("Gustow")
+    find("a", text: "Gustow").click
     page.has_title? "SUBWAY® Rügen Lieferservice - sub2home"
   end
 
@@ -14,7 +14,7 @@ describe "home.home", :sauce => true do
     page.has_title? "sub2home - Deine Onlinetheke für SUBWAY®-Lieferservices"
     fill_in "Wo", with: "18581"
     sleep 1
-    page.find("h4", text: "Rügen" ).click
+    page.find("h4", text: "Rügen").click
     page.has_title? "SUBWAY® Rügen Lieferservice - sub2home"
   end
 
@@ -25,7 +25,7 @@ describe "home.home", :sauce => true do
     sleep 1
     page.has_text? "Hier gibt es leider noch keinen Store, der über sub2home liefert."
     fill_in "suggestStoreMessage", with: "Rügenstr. 15 in Rügen um die Ecke bei mir!"
-    click_link("Übersicht der Restaurants")
+    click_link "Übersicht der Restaurants"
     page.has_title? "Infotheke - sub2home"
   end
 
