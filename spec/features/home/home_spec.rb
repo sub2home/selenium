@@ -25,6 +25,7 @@ describe "home.home", :sauce => true do
     sleep 1
     page.has_text? "Hier gibt es leider noch keinen Store, der über sub2home liefert."
     fill_in "suggestStoreMessage", with: "Rügenstr. 15 in Rügen um die Ecke bei mir!"
+    sleep 1
     page.find("a", text: "Übersicht der Restaurants").click
     page.has_title? "Infotheke - sub2home"
   end
