@@ -10,7 +10,7 @@ selenium
 * https://gist.github.com/zhengjia/428105
 
 ### Installation
-If you haven't [bundler](http://bundler.io/) installed yet, run:
+You need have Ruby2 installed for the tests to run. If you haven't [bundler](http://bundler.io/) installed yet, run:
 
 ```sh
 $ gem install bundler
