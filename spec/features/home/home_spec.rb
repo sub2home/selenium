@@ -1,7 +1,7 @@
 describe "home.home", :sauce => true do
 
   it "should open store page of Memmingen" do
-    visit "/"
+    visit "https://www.sub2home.com"
     page.has_title? "sub2home - Deine Onlinetheke für SUBWAY®-Lieferservices"
     fill_in "Wo", with: "87700"
     page.find("span", text: "Innenstadt" ).click
