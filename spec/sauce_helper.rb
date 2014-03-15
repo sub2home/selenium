@@ -13,7 +13,7 @@ if ENV['SAUCE_ACCESS_KEY']
 		c[:browsers] = [
 			["Windows 8", "Internet Explorer", "10"],
 			["Windows 7", "Firefox", "20"],
-			# ["OS X 10.8", "Safari", "6"],
+			["OS X 10.8", "Safari", "6"],
 			["Linux", "Chrome", nil]
 		]
 	end
