@@ -18,7 +18,7 @@ if ENV['SAUCE_ACCESS_KEY']
     ]
   end
 else
-  Capybara.current_driver = :selenium
+  Capybara.default_driver = :selenium
 end
 
 RSpec.configure do |config|
