@@ -1,4 +1,4 @@
-describe "home.home", :sauce => true do
+describe "home.home", sauce: true, js: true do
 
   it "should open store page of Rügen via delilveryAreaSelection" do
     visit "https://www.sub2home.com"
